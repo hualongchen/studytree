@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Study-springsecurity-annotation:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="Study-springsecurity-annotation.war">
+      <element id="artifact" artifact-name="Study-springsecurity-annotation:war exploded" />
+    </root>
+  </artifact>
+</component>

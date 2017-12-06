@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.2.xsd">
+
+
+
+    <http auto-config="true">
+        <intercept-url pattern="/admin**" access="hasRole('ROLE_USER')" />
+
+        <form-login
+                login-page="/login"
+                default-target-url="/welcome"
+                authentication-failure-url="/login?error"
+                username-parameter="username"
+                password-parameter="password" login-processing-url="/j_spring_security_check"/>
+        <logout logout-success-url="/login?logout"  logout-url="/j_spring_security_logout"/>
+
+        <!--开启CSRF那么在登录或注销页面中必须包括_csrf.token
+
+spring-security4.x版本需要自己手动在logout标签加上logout-url=“/j_spring_security_logout”
+spring-security3.x版本不需要手动加，spring-security默认处理
+开启了csrf后，请求变为post。这点需要注意。
+        -->
+        <csrf/>
+    </http>
+
+    <authentication-manager>
+        <authentication-provider>
+            <user-service>
+                <user name="111" password="111" authorities="ROLE_USER" />
+            </user-service>
+        </authentication-provider>
+    </authentication-manager>
+
+</beans:beans> 

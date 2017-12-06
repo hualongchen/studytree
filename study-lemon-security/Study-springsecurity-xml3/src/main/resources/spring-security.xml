@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.2.xsd">
+
+
+
+
+    <http pattern="/static/**" security="none"/>
+
+
+    <http auto-config="true" >
+        <intercept-url pattern="/" access="hasRole('USER')" />
+        <intercept-url pattern="/home" access="hasRole('USER')" />
+        <intercept-url pattern="/admin**" access="hasRole('ADMIN')" />
+        <intercept-url pattern="/dba**" access="hasRole('ADMIN') and hasRole('DBA')" />
+
+
+        <form-login  login-page="/login"
+                     username-parameter="ssoId"
+                     password-parameter="password"
+                     authentication-success-handler-ref="customSuccessHandler"
+                     authentication-failure-url="/Access_Denied" />
+        <csrf/>
+    </http>
+
+    <authentication-manager >
+        <authentication-provider>
+            <user-service>
+                <user name="111"  password="111"  authorities="ROLE_USER" />
+                <user name="admin" password="111" authorities="ROLE_ADMIN" />
+                <user name="dba"   password="111" authorities="ROLE_ADMIN,ROLE_DBA" />
+            </user-service>
+        </authentication-provider>
+    </authentication-manager>
+
+    <beans:bean id="customSuccessHandler" class="com.lemon.chen.util.CustomSuccessHandler" />
+
+</beans:beans> 

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="com.lemon.chen:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="lemon-springmvc.war">
+      <element id="artifact" artifact-name="com.lemon.chen:war exploded" />
+    </root>
+  </artifact>
+</component>

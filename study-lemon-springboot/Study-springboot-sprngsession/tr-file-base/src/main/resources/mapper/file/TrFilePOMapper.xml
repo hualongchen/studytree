@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tr.file.dao.mapper.file.TrFilePOMapper" >
+  <resultMap id="BaseResultMap" type="com.tr.file.dao.bean.file.TrFilePO" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="filevid" property="filevid" jdbcType="VARCHAR" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
+    <result column="argeementid" property="argeementid" jdbcType="VARCHAR" />
+    <result column="accessurl" property="accessurl" jdbcType="VARCHAR" />
+    <result column="sourceurl" property="sourceurl" jdbcType="VARCHAR" />
+    <result column="sourcepath" property="sourcepath" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

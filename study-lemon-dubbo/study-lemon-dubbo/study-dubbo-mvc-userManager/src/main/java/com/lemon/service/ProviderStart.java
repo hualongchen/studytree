@@ -12,7 +12,8 @@ public class ProviderStart {
     public static void main(String[] args) throws Exception{
 
 
-        ClassPathXmlApplicationContext  context =
+        @SuppressWarnings("resource")
+		ClassPathXmlApplicationContext  context =
                 new ClassPathXmlApplicationContext(new String[]{"dubbo-provider.xml"});
 
         context.start();

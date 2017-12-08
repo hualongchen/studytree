@@ -1,88 +1,93 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>study-lemon-dubbo</artifactId>
-        <groupId>com.lemon</groupId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
-    <modelVersion>4.0.0</modelVersion>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<artifactId>study-lemon-dubbo</artifactId>
+		<groupId>com.lemon</groupId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
 
-    <artifactId>study-dubbo-mvc-userManager</artifactId>
-    <packaging>jar</packaging>
+	<artifactId>study-dubbo-mvc-userManager</artifactId>
+	<packaging>jar</packaging>
 
-    <name>study-dubbo-mvc-userManager</name>
-    <url>http://maven.apache.org</url>
+	<name>study-dubbo-mvc-userManager</name>
+	<url>http://maven.apache.org</url>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jdk.version>1.8</jdk.version>
-        <spring.version>4.3.10.RELEASE</spring.version>
-        <jstl.version>1.2</jstl.version>
-        <hibernate.version>4.3.6.Final</hibernate.version>
-        <mysql.connector.version>5.1.31</mysql.connector.version>
-    </properties>
-
-
-    <dependencies>
-
-        <!--内部依赖-->
-        <dependency>
-            <groupId>com.lemon</groupId>
-            <artifactId>study-dubbo-mvc-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jdk.version>1.8</jdk.version>
+		<spring.version>4.3.10.RELEASE</spring.version>
+		<jstl.version>1.2</jstl.version>
+		<hibernate.version>4.3.6.Final</hibernate.version>
+		<mysql.connector.version>5.1.31</mysql.connector.version>
+	</properties>
 
 
-        </dependency>
-        <!--Spring  start-->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
+	<dependencies>
 
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-tx</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-orm</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-
-        <!--Spring  end-->
-
-        <!--dubbo start-->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>dubbo</artifactId>
-            <version>2.5.7</version>
-        </dependency>
-
-        <!--dubbo end -->
+		<!--内部依赖 -->
+		<dependency>
+			<groupId>com.lemon</groupId>
+			<artifactId>study-dubbo-mvc-api</artifactId>
+			<version>1.0-SNAPSHOT</version>
 
 
-        <!--zookeeper  start-->
-        <dependency>
-            <groupId>org.apache.zookeeper</groupId>
-            <artifactId>zookeeper</artifactId>
-            <version>3.4.10</version>
-        <!--zookeeper  start-->
+		</dependency>
+		<!--Spring start -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
 
-        </dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!--Spring end -->
+
+		<!--dubbo start -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>dubbo</artifactId>
+			<version>2.5.7</version>
+		</dependency>
+
+		<!--dubbo end -->
+
+           
+		<!--zookeeper start -->
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>3.4.10</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.101tec</groupId>
+			<artifactId>zkclient</artifactId>
+			<version>0.10</version>
+		</dependency>
+		<!--zookeeper end -->
 
 
-    </dependencies>
+	</dependencies>
 </project>

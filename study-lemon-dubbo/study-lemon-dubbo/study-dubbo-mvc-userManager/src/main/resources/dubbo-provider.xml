@@ -9,9 +9,9 @@
     <dubbo:application name="userManager-provider" owner="lemon" organization="stduy-tree" version="1.1.1"/>
 
     <!-- 注册中心配置 -->
-    <dubbo:registry address="zookeeper://127.0.0.1:2181" timeout="10000"/>
+    <dubbo:registry address="zookeeper://127.0.0.1:2181" timeout="10000" />
 
-    <dubbo:protocol name="dubbo" port="20880"/>
+    <dubbo:protocol name="dubbo" port="20880" />
     <!-- dubbo暴露地址 -->
 
     <!-- 监控的地址从注册中心中找 -->
@@ -21,11 +21,11 @@
     <dubbo:provider timeout="10000" group="T5"/>
 
     <!-- 注解扫描服务 -->
-    <dubbo:annotation package="com.lemon.service" />
+    <!-- <dubbo:annotation package="com.lemon.service" /> -->
 
 
     <!--下面是单个单个的服务-->
-    <!--<dubbb:service interface="com.lemon.api.UserManagerAPI" ref="userService"/>
-    <bean id="userService" class="com.lemon.service.UserviceImpl"/>-->
+    <dubbb:service interface="com.lemon.api.UserManagerAPI" ref="userService"/>
+    <bean id="userService" class="com.lemon.service.UserviceImpl"/>
 
 </beans>

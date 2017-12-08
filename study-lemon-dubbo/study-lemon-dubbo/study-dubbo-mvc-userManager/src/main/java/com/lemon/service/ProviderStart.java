@@ -3,14 +3,11 @@ package com.lemon.service;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
-
-
 public class ProviderStart {
 
 
     //启动
     public static void main(String[] args) throws Exception{
-
 
         @SuppressWarnings("resource")
 		ClassPathXmlApplicationContext  context =

@@ -5,12 +5,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
 
-    <!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
-    <dubbo:application name="userManager-provider" owner="lemon" organization="stduy-tree" version="1.1.1"/>
+    <!-- 提供方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
+    <dubbo:application name="userManager-provider" owner="lemon" organization="stduy-tree" />
 
     <!-- 注册中心配置 -->
-    <dubbo:registry address="zookeeper://127.0.0.1:2181" timeout="10000" />
-
+    <dubbo:registry address="zookeeper://127.0.0.1:2181" />
+<!--     <dubbo:registry address="zookeeper://127.0.0.1:2181,127.0.0.1:2181,127.0.0.1:2181" timeout="10000" />
+ -->
     <dubbo:protocol name="dubbo" port="20880" />
     <!-- dubbo暴露地址 -->
 
@@ -18,14 +19,14 @@
     <dubbo:monitor protocol="registry"/>
 
     <!-- 提供方默认配置 -->
-    <dubbo:provider timeout="10000" group="T5"/>
+   <!--  <dubbo:provider timeout="10000"/> -->
 
     <!-- 注解扫描服务 -->
     <!-- <dubbo:annotation package="com.lemon.service" /> -->
 
 
     <!--下面是单个单个的服务-->
-    <dubbb:service interface="com.lemon.api.UserManagerAPI" ref="userService"/>
+    <dubbb:service interface="com.lemon.api.UserManagerAPI" ref="userService" />
     <bean id="userService" class="com.lemon.service.UserviceImpl"/>
 
 </beans>

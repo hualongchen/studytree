@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+   
+   
+   <!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
+    <dubbo:application name="userManager-consumer"/>
+    <!-- 注册中心配置 -->
+    <dubbo:registry address="zookeeper://127.0.0.1:2181" />
+    
+    <dubbo:protocol name="dubbo" port="20880" />
+    
+    <!-- 监控的地址从注册中心中找 -->
+    <dubbo:monitor protocol="registry"/>
+    
+    <!-- 加了url, 可以直接http方式连接这个接口 。直接启动，就绕过ZK，直接调用-->
+    <dubbo:reference id="userService" interface="com.lemon.api.UserManagerAPI"  check="true" url="dubbo://localhost:20880"/>
+    
+   
+</beans>

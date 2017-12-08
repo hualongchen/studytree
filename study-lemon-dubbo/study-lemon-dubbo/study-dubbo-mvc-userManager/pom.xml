@@ -31,7 +31,6 @@
 			<artifactId>study-dubbo-mvc-api</artifactId>
 			<version>1.0-SNAPSHOT</version>
 
-
 		</dependency>
 		<!--Spring start -->
 		<dependency>

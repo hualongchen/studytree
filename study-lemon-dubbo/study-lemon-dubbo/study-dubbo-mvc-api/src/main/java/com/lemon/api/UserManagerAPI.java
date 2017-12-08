@@ -13,7 +13,7 @@ public interface UserManagerAPI {
      * @param id
      * @return
      */
-    UserDTO  findUserById(int id) ;
+    public UserDTO  findUserById(int id) ;
 
 
     /**
@@ -21,5 +21,5 @@ public interface UserManagerAPI {
      * @param userName
      * @return
      */
-    UserDTO  findUserByName(String userName) ;
+    public UserDTO  findUserByName(String userName) ;
 }

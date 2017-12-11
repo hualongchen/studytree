@@ -18,5 +18,5 @@
     <!-- 加了url, 可以直接http方式连接这个接口 。直接启动，就绕过ZK，直接调用-->
     <dubbo:reference id="userService" interface="com.lemon.api.UserManagerAPI"  check="true" url="dubbo://localhost:20880"/>
     
-   
+ 
 </beans>

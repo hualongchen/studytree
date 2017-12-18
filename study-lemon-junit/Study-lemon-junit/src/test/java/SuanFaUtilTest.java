@@ -1,6 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import sun.applet.Main;
+
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 
@@ -34,6 +36,9 @@ public class SuanFaUtilTest {
         //测试hamcrest框架
 
         int rel = suanFaUtil.delete(5,1);
+
+        System.out.println(rel);
+        
 
         assertThat(4,is(4));
         assertThat(4,greaterThan(3));

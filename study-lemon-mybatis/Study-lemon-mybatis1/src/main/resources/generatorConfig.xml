@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+<!DOCTYPE generatorConfiguration    
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"    
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">    
+    
+<generatorConfiguration>  
+ <!-- 数据库访问的驱动包 -->  
+  <classPathEntry location="C:/Users/lemon/.m2/repository/mysql/mysql-connector-java/5.1.30/mysql-connector-java-5.1.30.jar" />    
+<context id="mysql" targetRuntime="MyBatis3">    
+  <commentGenerator>    
+   <!-- 是否去除自动生成的注释  这个最好设置成false  否则容易出现重复代码 -->  
+    <property name="suppressAllComments" value="true" />    
+  </commentGenerator>    
+  <jdbcConnection driverClass="com.mysql.jdbc.Driver"    
+connectionURL="jdbc:mysql://localhost:3306/tongrong_datasource?characterEncoding=UTF-8"
+userId="root" password="root">
+</jdbcConnection>   
+  <javaTypeResolver >    
+     <property name="forceBigDecimals" value="false" />    
+  </javaTypeResolver>    
+  <!--生成Model类存放位置 -->
+<javaModelGenerator targetPackage="com.lemon.chen.model" targetProject="Study-lemon-mybatis1\src\main\java">
+<property name="enableSubPackages" value="true"/>
+<property name="trimStrings" value="true" /> 
+</javaModelGenerator>
+ 
+ <sqlMapGenerator targetPackage="com.lemon.chen.model" targetProject="Study-lemon-mybatis1\src\main\java">
+<property name="enableSubPackages" value="false" />
+</sqlMapGenerator>
+
+ <javaClientGenerator type="XMLMAPPER"
+targetPackage="com.lemon.chen.model" targetProject="Study-lemon-mybatis1\src\main\java">
+<property name="enableSubPackages" value="true" />
+</javaClientGenerator>
+<!-- mapper.xml生成的地方 -->    
+  <!-- 表名和生成的实体名 -->  
+  <table tableName="datasource_interface_info" domainObjectName="InterfaceInfoPO"></table>   
+</context>    
+     
+</generatorConfiguration> 

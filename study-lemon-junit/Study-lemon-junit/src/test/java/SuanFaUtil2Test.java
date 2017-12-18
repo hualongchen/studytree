@@ -13,9 +13,7 @@ import static org.junit.Assert.assertThat;
  */
 public class SuanFaUtil2Test {
 
-
     SuanFaUtil  suanFaUtil ;
-
 
     @Before
     public void before()throws Exception{
@@ -36,6 +34,7 @@ public class SuanFaUtil2Test {
 
         int rel = suanFaUtil.delete(5,1);
 
+        System.out.println(rel);
         assertThat(4,is(4));
         assertThat(4,greaterThan(3));
         assertThat(4,allOf(greaterThan(3),lessThan(6)));

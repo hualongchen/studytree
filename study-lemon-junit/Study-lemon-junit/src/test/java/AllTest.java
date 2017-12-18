@@ -11,9 +11,6 @@ import org.junit.runners.Suite.SuiteClasses;
 public class AllTest {
 }
 
-
-
-
 /**
 
  cobertura jar进行代码覆盖率的单元测试。

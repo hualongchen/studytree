@@ -9,7 +9,7 @@
     <dubbo:application name="userManager-provider" owner="lemon" organization="stduy-tree" />
 
     <!-- 注册中心配置 -->
-    <dubbo:registry address="zookeeper://127.0.0.1:2181" />
+    <dubbo:registry address="zookeeper://192.168.81.128:4180" />
 <!--     <dubbo:registry address="zookeeper://127.0.0.1:2181,127.0.0.1:2181,127.0.0.1:2181" timeout="10000" />
  -->
     <dubbo:protocol name="dubbo" port="20880" />
@@ -24,9 +24,20 @@
     <!-- 注解扫描服务 -->
     <!-- <dubbo:annotation package="com.lemon.service" /> -->
 
-
     <!--下面是单个单个的服务-->
     <dubbb:service interface="com.lemon.api.UserManagerAPI" ref="userService" />
     <bean id="userService" class="com.lemon.service.UserviceImpl"/>
 
+    <!--集群的使用方法-->
+
+    <!--
+   cluster :
+         failover ： 默认为这个，当失败后，会重试其他的
+         failfast ： 失败就立即报错，通用用于非幂等性的操作
+         failsafe：  出现异常直接忽略。通常用于写入审计日志
+         failback ： 失败自动恢复，后台记录失败请求，定时重发， 用于消息通知操作。
+         forking ：  并行调多个服务器，一个成功就返回，用于实时性要求高的读操作。可以已设置forks=2
+   retiries: 重试的次数
+     -->
+    <!--<dubbb:service interface="com.lemon.api.UserManagerAPI" ref="userService"  cluster="failfast" retries="3"/>-->
 </beans>

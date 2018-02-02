@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lemon-server-account-api" />
+        <module name="lemon-server-account-service" />
+        <module name="lemon-server-message-api" />
+        <module name="lemon-server-message-config" />
+        <module name="lemon-server-message-core" />
+        <module name="lemon-server-message-listener" />
+        <module name="lemon-server-message-service" />
+        <module name="lemon-server-message-task" />
+        <module name="lemon-server-message-web" />
+        <module name="lemon-server-notify-api" />
+        <module name="lemon-server-notify-service" />
+        <module name="lemon-server-notify-web" />
+        <module name="lemon-server-order-api" />
+        <module name="lemon-server-order-service" />
+        <module name="lemon-server-user-api" />
+        <module name="lemon-server-user-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lemon-server-account-api" target="1.8" />
+      <module name="lemon-server-account-service" target="1.8" />
+      <module name="lemon-server-message-api" target="1.8" />
+      <module name="lemon-server-message-config" target="1.8" />
+      <module name="lemon-server-message-core" target="1.8" />
+      <module name="lemon-server-message-listener" target="1.7" />
+      <module name="lemon-server-message-service" target="1.8" />
+      <module name="lemon-server-message-task" target="1.8" />
+      <module name="lemon-server-message-web" target="1.8" />
+      <module name="lemon-server-notify-api" target="1.8" />
+      <module name="lemon-server-notify-service" target="1.8" />
+      <module name="lemon-server-notify-web" target="1.8" />
+      <module name="lemon-server-order-api" target="1.8" />
+      <module name="lemon-server-order-service" target="1.8" />
+      <module name="lemon-server-user-api" target="1.8" />
+      <module name="lemon-server-user-service" target="1.8" />
+      <module name="Study-lemon-message" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tongrong.order.dao.mapper.OrderInfoPOMapper" >
+  <resultMap id="BaseResultMap" type="com.tongrong.order.po.OrderInfoPO" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="order_id" property="orderId" jdbcType="VARCHAR" />
+    <result column="user_id" property="userId" jdbcType="BIGINT" />
+    <result column="account" property="account" jdbcType="VARCHAR" />
+    <result column="term_no" property="termNo" jdbcType="VARCHAR" />
+    <result column="purpose" property="purpose" jdbcType="VARCHAR" />
+    <result column="child_product" property="childProduct" jdbcType="VARCHAR" />
+    <result column="source" property="source" jdbcType="VARCHAR" />
+    <result column="rate" property="rate" jdbcType="VARCHAR" />
+    <result column="repayment" property="repayment" jdbcType="VARCHAR" />
+    <result column="risk_account" property="riskAccount" jdbcType="VARCHAR" />
+    <result column="risk_term" property="riskTerm" jdbcType="VARCHAR" />
+    <result column="final_account" property="finalAccount" jdbcType="VARCHAR" />
+    <result column="order_account" property="orderAccount" jdbcType="VARCHAR" />
+    <result column="bank_card_no" property="bankCardNo" jdbcType="VARCHAR" />
+    <result column="bank_card_name" property="bankCardName" jdbcType="VARCHAR" />
+    <result column="order_status" property="orderStatus" jdbcType="INTEGER" />
+    <result column="inside_order_status" property="insideOrderStatus" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="id_no" property="idNo" jdbcType="VARCHAR" />
+    <result column="mobile_no" property="mobileNo" jdbcType="VARCHAR" />
+    <result column="marry" property="marry" jdbcType="VARCHAR" />
+    <result column="city" property="city" jdbcType="VARCHAR" />
+    <result column="region" property="region" jdbcType="VARCHAR" />
+    <result column="house_type" property="houseType" jdbcType="VARCHAR" />
+    <result column="company_type" property="companyType" jdbcType="VARCHAR" />
+    <result column="work_type" property="workType" jdbcType="VARCHAR" />
+    <result column="has_social_security" property="hasSocialSecurity" jdbcType="VARCHAR" />
+    <result column="social_security_open_year" property="socialSecurityOpenYear" jdbcType="VARCHAR" />
+    <result column="social_security_now_status" property="socialSecurityNowStatus" jdbcType="VARCHAR" />
+    <result column="social_security_month_money" property="socialSecurityMonthMoney" jdbcType="VARCHAR" />
+    <result column="social_security_deposit_units" property="socialSecurityDepositUnits" jdbcType="VARCHAR" />
+    <result column="has_accumulation_fund" property="hasAccumulationFund" jdbcType="VARCHAR" />
+    <result column="accumulation_fund_open_year" property="accumulationFundOpenYear" jdbcType="VARCHAR" />
+    <result column="accumulation_fund_now_status" property="accumulationFundNowStatus" jdbcType="VARCHAR" />
+    <result column="accumulation_fund_month_money" property="accumulationFundMonthMoney" jdbcType="VARCHAR" />
+    <result column="accumulation_fund_deposit_units" property="accumulationFundDepositUnits" jdbcType="VARCHAR" />
+    <result column="has_house" property="hasHouse" jdbcType="VARCHAR" />
+    <result column="house_address" property="houseAddress" jdbcType="VARCHAR" />
+    <result column="house_area" property="houseArea" jdbcType="VARCHAR" />
+    <result column="house_value" property="houseValue" jdbcType="VARCHAR" />
+    <result column="friend_name1" property="friendName1" jdbcType="VARCHAR" />
+    <result column="friend_mobile_no1" property="friendMobileNo1" jdbcType="VARCHAR" />
+    <result column="friend_ship1" property="friendShip1" jdbcType="VARCHAR" />
+    <result column="friend_name2" property="friendName2" jdbcType="VARCHAR" />
+    <result column="friend_mobile_no2" property="friendMobileNo2" jdbcType="VARCHAR" />
+    <result column="friend_ship2" property="friendShip2" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="field1" property="field1" jdbcType="VARCHAR" />
+    <result column="field2" property="field2" jdbcType="VARCHAR" />
+    <result column="field3" property="field3" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

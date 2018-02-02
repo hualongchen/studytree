@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Study-lemon-message.iml" filepath="$PROJECT_DIR$/Study-lemon-message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemon-server-account-api/lemon-server-account-api.iml" filepath="$PROJECT_DIR$/lemon-server-account-api/lemon-server-account-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemon-server-account-service/lemon-server-account-service.iml" filepath="$PROJECT_DIR$/lemon-server-account-service/lemon-server-account-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemon-server-message-api/lemon-server-message-api.iml" filepath="$PROJECT_DIR$/lemon-server-message-api/lemon-server-message-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemon-server-message-config/lemon-server-message-config.iml" filepath="$PROJECT_DIR$/lemon-server-message-config/lemon-server-message-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemon-server-message-core/lemon-server-message-core.iml" filepath="$PROJECT_DIR$/lemon-server-message-core/lemon-server-message-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemon-server-message-listener/lemon-server-message-listener.iml" filepath="$PROJECT_DIR$/lemon-server-message-listener/lemon-server-message-listener.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemon-server-message-service/lemon-server-message-service.iml" filepath="$PROJECT_DIR$/lemon-server-message-service/lemon-server-message-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemon-server-message-task/lemon-server-message-task.iml" filepath="$PROJECT_DIR$/lemon-server-message-task/lemon-server-message-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemon-server-message-web/lemon-server-message-web.iml" filepath="$PROJECT_DIR$/lemon-server-message-web/lemon-server-message-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemon-server-notify-api/lemon-server-notify-api.iml" filepath="$PROJECT_DIR$/lemon-server-notify-api/lemon-server-notify-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemon-server-notify-service/lemon-server-notify-service.iml" filepath="$PROJECT_DIR$/lemon-server-notify-service/lemon-server-notify-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemon-server-notify-web/lemon-server-notify-web.iml" filepath="$PROJECT_DIR$/lemon-server-notify-web/lemon-server-notify-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemon-server-order-api/lemon-server-order-api.iml" filepath="$PROJECT_DIR$/lemon-server-order-api/lemon-server-order-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemon-server-order-service/lemon-server-order-service.iml" filepath="$PROJECT_DIR$/lemon-server-order-service/lemon-server-order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemon-server-user-api/lemon-server-user-api.iml" filepath="$PROJECT_DIR$/lemon-server-user-api/lemon-server-user-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lemon-server-user-service/lemon-server-user-service.iml" filepath="$PROJECT_DIR$/lemon-server-user-service/lemon-server-user-service.iml" />
+    </modules>
+  </component>
+</project>

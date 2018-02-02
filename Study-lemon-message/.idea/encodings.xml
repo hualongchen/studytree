@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lemon-server-account-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lemon-server-account-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lemon-server-message-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lemon-server-message-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lemon-server-message-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lemon-server-message-listener" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lemon-server-message-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lemon-server-message-task" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lemon-server-message-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lemon-server-notify-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lemon-server-notify-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lemon-server-notify-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lemon-server-order-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lemon-server-order-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lemon-server-user-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lemon-server-user-service" charset="UTF-8" />
+  </component>
+</project>

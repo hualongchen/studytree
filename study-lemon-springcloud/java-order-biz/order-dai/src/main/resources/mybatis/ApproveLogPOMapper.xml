@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tongrong.order.dao.mapper.ApproveLogPOMapper" >
+  <resultMap id="BaseResultMap" type="com.tongrong.order.po.ApproveLogPO" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="order_id" property="orderId" jdbcType="VARCHAR" />
+    <result column="link" property="link" jdbcType="VARCHAR" />
+    <result column="operate_name" property="operateName" jdbcType="VARCHAR" />
+    <result column="operate" property="operate" jdbcType="VARCHAR" />
+    <result column="result" property="result" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="field1" property="field1" jdbcType="VARCHAR" />
+    <result column="field2" property="field2" jdbcType="VARCHAR" />
+    <result column="field3" property="field3" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/java-order-biz.iml" filepath="$PROJECT_DIR$/java-order-biz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-api/order-api.iml" filepath="$PROJECT_DIR$/order-api/order-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-biz/order-biz.iml" filepath="$PROJECT_DIR$/order-biz/order-biz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-common/order-common.iml" filepath="$PROJECT_DIR$/order-common/order-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-dai/order-dai.iml" filepath="$PROJECT_DIR$/order-dai/order-dai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-modul/order-modul.iml" filepath="$PROJECT_DIR$/order-modul/order-modul.iml" />
+    </modules>
+  </component>
+</project>

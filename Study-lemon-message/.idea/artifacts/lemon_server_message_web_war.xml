@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lemon-server-message-web:war">
+    <output-path>$PROJECT_DIR$/lemon-server-message-web/target</output-path>
+    <root id="archive" name="roncoo-pay-web-message.war">
+      <element id="artifact" artifact-name="lemon-server-message-web:war exploded" />
+    </root>
+  </artifact>
+</component>

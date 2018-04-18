@@ -2,6 +2,7 @@ package com.lemon.chen.web;
 
 import com.lemon.chen.util.BusinessException;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -21,6 +22,8 @@ public class ExceptionController {
 
     @RequestMapping("/exception2")
     public Object hello2() throws BusinessException {
+
+
 
         throw new BusinessException("我就任性的抛一个");
     }

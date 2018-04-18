@@ -17,6 +17,7 @@
         <module name="lemon-server-message-web" />
         <module name="lemon-server-notify-api" />
         <module name="lemon-server-notify-service" />
+        <module name="lemon-server-notify-task" />
         <module name="lemon-server-notify-web" />
         <module name="lemon-server-order-api" />
         <module name="lemon-server-order-service" />
@@ -36,7 +37,8 @@
       <module name="lemon-server-message-web" target="1.8" />
       <module name="lemon-server-notify-api" target="1.8" />
       <module name="lemon-server-notify-service" target="1.8" />
-      <module name="lemon-server-notify-web" target="1.8" />
+      <module name="lemon-server-notify-task" target="1.7" />
+      <module name="lemon-server-notify-web" target="1.7" />
       <module name="lemon-server-order-api" target="1.8" />
       <module name="lemon-server-order-service" target="1.8" />
       <module name="lemon-server-user-api" target="1.8" />

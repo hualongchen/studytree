@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lemon.user.service.dao.mapper.QianhaiBankCardPOMapper">
+  <resultMap id="BaseResultMap" type="com.lemon.user.service.dao.bean.QianhaiBankCardPO">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="trans_no" jdbcType="VARCHAR" property="transNo" />
+    <result column="batch_no" jdbcType="VARCHAR" property="batchNo" />
+    <result column="seq_no" jdbcType="VARCHAR" property="seqNo" />
+    <result column="bank_card_no" jdbcType="VARCHAR" property="bankCardNo" />
+    <result column="auth_type" jdbcType="VARCHAR" property="authType" />
+    <result column="mobile_no" jdbcType="VARCHAR" property="mobileNo" />
+    <result column="id_no" jdbcType="VARCHAR" property="idNo" />
+    <result column="id_type" jdbcType="VARCHAR" property="idType" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="reason_code" jdbcType="VARCHAR" property="reasonCode" />
+    <result column="expires_year" jdbcType="VARCHAR" property="expiresYear" />
+    <result column="expires_month" jdbcType="VARCHAR" property="expiresMonth" />
+    <result column="credit_card_cvn" jdbcType="VARCHAR" property="creditCardCvn" />
+    <result column="reuse_days" jdbcType="VARCHAR" property="reuseDays" />
+    <result column="busi_desc" jdbcType="VARCHAR" property="busiDesc" />
+    <result column="auth_result" jdbcType="VARCHAR" property="authResult" />
+    <result column="bank_name" jdbcType="VARCHAR" property="bankName" />
+    <result column="card_type" jdbcType="VARCHAR" property="cardType" />
+    <result column="er_code" jdbcType="VARCHAR" property="erCode" />
+    <result column="er_msg" jdbcType="VARCHAR" property="erMsg" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="field1" jdbcType="VARCHAR" property="field1" />
+    <result column="field2" jdbcType="VARCHAR" property="field2" />
+    <result column="field3" jdbcType="VARCHAR" property="field3" />
+  </resultMap>
+  <resultMap id="BaseResultMap" type="com.lemon.user.service.dao.bean.QianhaiBankCardPO">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="trans_no" jdbcType="VARCHAR" property="transNo" />
+    <result column="batch_no" jdbcType="VARCHAR" property="batchNo" />
+    <result column="seq_no" jdbcType="VARCHAR" property="seqNo" />
+    <result column="bank_card_no" jdbcType="VARCHAR" property="bankCardNo" />
+    <result column="auth_type" jdbcType="VARCHAR" property="authType" />
+    <result column="mobile_no" jdbcType="VARCHAR" property="mobileNo" />
+    <result column="id_no" jdbcType="VARCHAR" property="idNo" />
+    <result column="id_type" jdbcType="VARCHAR" property="idType" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="reason_code" jdbcType="VARCHAR" property="reasonCode" />
+    <result column="expires_year" jdbcType="VARCHAR" property="expiresYear" />
+    <result column="expires_month" jdbcType="VARCHAR" property="expiresMonth" />
+    <result column="credit_card_cvn" jdbcType="VARCHAR" property="creditCardCvn" />
+    <result column="reuse_days" jdbcType="VARCHAR" property="reuseDays" />
+    <result column="busi_desc" jdbcType="VARCHAR" property="busiDesc" />
+    <result column="auth_result" jdbcType="VARCHAR" property="authResult" />
+    <result column="bank_name" jdbcType="VARCHAR" property="bankName" />
+    <result column="card_type" jdbcType="VARCHAR" property="cardType" />
+    <result column="er_code" jdbcType="VARCHAR" property="erCode" />
+    <result column="er_msg" jdbcType="VARCHAR" property="erMsg" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="field1" jdbcType="VARCHAR" property="field1" />
+    <result column="field2" jdbcType="VARCHAR" property="field2" />
+    <result column="field3" jdbcType="VARCHAR" property="field3" />
+  </resultMap>
+</mapper>

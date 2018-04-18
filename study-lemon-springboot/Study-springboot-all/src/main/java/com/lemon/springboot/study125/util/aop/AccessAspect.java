@@ -26,18 +26,15 @@ import java.util.Arrays;
 @Component
 public class AccessAspect {
 
-
     private Logger logger = Logger.getLogger(getClass());
 
     ThreadLocal<Long> startTime = new ThreadLocal<>();
-
 
     /**
      * 切入点 ， 切入web包下面所有的方法
      */
     @Pointcut("execution(public * com.lemon.springboot.study125.web..*.*(..))")
     public void webLog(){}
-
 
     /**
      * 执行对应方法前答应出所有的消息

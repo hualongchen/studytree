@@ -13,7 +13,7 @@
         </plugin>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/lemon_user?characterEncoding=UTF-8"
+                        connectionURL="jdbc:mysql://localhost:3306/tongrong_datasource?characterEncoding=UTF-8"
                         userId="root"
                         password="root">
         </jdbcConnection>
@@ -38,14 +38,14 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
-
+<!--
         <table tableName="lemon_user_info" domainObjectName="LemonUserInfoPO"
-               enableCountByExample="true" enableUpdateByExample="true"
-               enableDeleteByExample="true" enableSelectByExample="true"
-               selectByExampleQueryId="true" enableSelectByPrimaryKey="true"
-               enableUpdateByPrimaryKey="true">
-            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
-        </table>
+                       enableCountByExample="true" enableUpdateByExample="true"
+                       enableDeleteByExample="true" enableSelectByExample="true"
+                       selectByExampleQueryId="true" enableSelectByPrimaryKey="true"
+                       enableUpdateByPrimaryKey="true">
+        <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+    </table>
 
         <table tableName="lemon_user_message_log" domainObjectName="LemonUserMessagePO"
                enableCountByExample="true" enableUpdateByExample="true"
@@ -53,7 +53,13 @@
                selectByExampleQueryId="true" enableSelectByPrimaryKey="true"
                enableUpdateByPrimaryKey="true">
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <table tableName="datasource_qianhai_echkpkgsCard" domainObjectName="QianhaiBankCardPO"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true" enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
-
     </context>
 </generatorConfiguration>
